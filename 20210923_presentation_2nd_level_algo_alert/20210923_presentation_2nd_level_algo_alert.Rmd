@@ -1,0 +1,63 @@
+---
+title: Second Level Algorithm and Alerting System
+author: Peter von Rohr and Jessica Gearing
+date: "`r Sys.Date()`"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Outline
+
+* Goals
+* Data
+* Normalisation
+* Supervised Statistical Learning
+* Second Level Algorithm
+* Alerting System
+* Procedure and Data Logistics
+* Conclusions
+
+
+## Goals
+
+1. Second Level Algorithm (SLA): Establish relations between behavior of a cow and traits of economic importance using supervised statistical learning
+2. Alerting System (AS): Use results from SLA to develop an alerting system
+
+
+## Data
+
+* Records with 
+    + cow ID
+    + time span
+    + basic behavior
+* Basic behaviors consist of
+    + eating
+    + laying
+    + ruminating
+    + standing
+    + walking
+    
+    
+## Data Aggregation
+
+* Meaningful aggregation level
+
+$\rightarrow$ Amount of time for each behavior per day
+
+* Common pattern of behavior for cows for each day (?)
+* Resulting plots also used in Alibaba
+
+
+## Example Plot
+
+`TODO: Include plot here`
+
+
+## Normalisation
+
+* 
+
