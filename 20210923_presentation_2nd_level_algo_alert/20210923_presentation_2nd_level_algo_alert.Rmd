@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * Goals
 * Data
-* Normalisation
+* Normalization
 * Supervised Statistical Learning
 * Second Level Algorithm
 * Alerting System
@@ -65,28 +65,57 @@ $\rightarrow$ Amount of time for each behavior per day
 * Behavior must be corrected for these source of variation
 * Remaining variation can be associated to events of interest for second level algorithm and alerting system
 
-$\rightarrow$ result after correction are normalised data
+$\rightarrow$ result after correction are normalized data
 
 
 ## Supervised Statistical Learning
 
 Two steps
 
-1. Training of a model with estimation of model parameter
+1. Training of a model consisting of 
+    + determining most important model features
+    + estimation of model parameter
 2. Trained model is used to predict future outcomes
 
 
 ## Training
 
+* Data set with 
+    + predictor variables, also known as "features": in our data this corresponds to the behavior of cows and 
+    + response variables: in our examples: traits of economic importance
+* Use model selection to determine relevant features
+* Estimate parameters for relevant features
+    + parameter of a feature determines how strong a feature affects the response variable
+* Use cross-classification to validate estimated model    
+
 
 ## Prediction
+
+* Data with only predictor variables
+* Use model from training to make predictions about future values of response variables
 
 
 ## Alerting System
 
+* Use prediction results from second level algorithm 
+* Define ranges of "normal" values of traits of economic importance
+* Generate alerts as soon as predicted values are outside of range of "normal" values
+
 
 ## Procedure and Data Logistics
+
+* Question on how to organize the data flow and the computations to be able to generate meaningful alerts
+* How often are data to be collected and evaluated?
+* Once per day is most likely not enough - hence hourly data collection and evaluation
+* One training run per day might be good enough
+* Same model can be used for prediction every hour based on newly collected data
+* Response variables must be updated every day before running the training
+* Possible groups of response variables
 
 
 ## Conclusions
 
+* Quality of data determines everything
+* Behavior data depend on first level algorithm
+* Response variables depend on farm management system
+* Alert system depends on just-in-time data collection
