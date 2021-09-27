@@ -59,5 +59,34 @@ $\rightarrow$ Amount of time for each behavior per day
 
 ## Normalisation
 
-* 
+* Sources of variation not related to traits of economic importance
+    + differences in behavior of individual cows
+    + differences between farms
+* Behavior must be corrected for these source of variation
+* Remaining variation can be associated to events of interest for second level algorithm and alerting system
+
+$\rightarrow$ result after correction are normalised data
+
+
+## Supervised Statistical Learning
+
+Two steps
+
+1. Training of a model with estimation of model parameter
+2. Trained model is used to predict future outcomes
+
+
+## Training
+
+
+## Prediction
+
+
+## Alerting System
+
+
+## Procedure and Data Logistics
+
+
+## Conclusions
 
