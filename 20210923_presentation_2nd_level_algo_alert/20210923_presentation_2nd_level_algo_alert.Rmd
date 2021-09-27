@@ -1,7 +1,7 @@
 ---
 title: Second Level Algorithm and Alerting System
 author: Peter von Rohr and Jessica Gearing
-date: "`r Sys.Date()`"
+date: "2021-09-30"
 output: beamer_presentation
 ---
 
@@ -119,3 +119,9 @@ Two steps
 * Behavior data depend on first level algorithm
 * Response variables depend on farm management system
 * Alert system depends on just-in-time data collection
+
+
+## Acknowledgment and Questions
+
+* Thank you to everyone ...
+* Open for questions ...
